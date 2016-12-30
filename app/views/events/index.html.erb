@@ -1,0 +1,8 @@
+<h1>Activity Log</h1>
+<p>
+<%= link_to 'Access previous generations results', rentals_index_path if Rental.count > 0%>
+<%= link_to 'Add a new csv file', rentals_new_path %>
+<p>
+ <div id="events">
+   <%= render @events %>
+ </div>

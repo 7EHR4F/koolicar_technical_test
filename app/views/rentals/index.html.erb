@@ -1,0 +1,15 @@
+<h1>Rentals index</h1>
+<%= link_to 'Add a new csv file', rentals_new_path %>
+
+<% @rentals.each do |r| %>
+<p>
+ <%= "Creation date: " %>
+ <%= r.name %></br>
+ <%= "CSV file: " %>
+ <%= r.csv.path %></br>
+ <%= "Number of locations: " %>
+ <%= r.positions.count %></br>
+ <%= "Total distance (kilometers): " %>
+ <%= r.kilometers %></br>
+</p>
+<% end %>
