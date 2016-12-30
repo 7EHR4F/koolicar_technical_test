@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Technical test for Koolicar as backend rails developer
 
-Things you may want to cover:
+* You need a redis server running on your localhost (config is in config/cable.yml in case you want to change it).
 
-* Ruby version
+* The start_.sh script is handling everything else, including killing previous instance of puma and starting the worker for delayed_job.
 
-* System dependencies
+* Start app with : sh start_app.sh
 
-* Configuration
+* You don't need a separate DBMS, the test is using sqlite3.
 
-* Database creation
+* Execute tests with : rails tests
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# koolicar_technical_test
